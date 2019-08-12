@@ -2,20 +2,37 @@ body{
 	background: #262626;
 }
 
+/*********************************/
+/* REUSABLE */
+/*********************************/
+
+
+
+.icon-big{
+    font-size: 280%;
+    
+    
+}
+
+/*********************************/
+
 .box-area{
+    background-color: #262626;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+/*	align-items: center;*/
 }
 
 .single-box{
 /*    why use relative*/
-	position: relative;  
+/*	position: relative;  */
+    padding-top: 30px;
 	display: flex;
+/*    flex: 1;*/
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+/*	justify-content: center;*/
 	width: 300px;
 	height: auto;
 	transition: .3s;
@@ -33,11 +50,17 @@ body{
 	padding: 20px;
 	background-size: cover;
 	background-position: center center;
+/*    transition: .3s;*/
+    
+    
+    
 }
 
+/*
 .single-box:nth-child(1) img-area{
 	background-image: url(1.jpg);
 }
+*/
 
 .single-box:nth-child(2) img-area{
 	background-image: url(2.jpg);
@@ -68,3 +91,18 @@ body{
 	background: #e84393;
 	color: #fff;
 }
+
+.single-box:hover,
+.single-box:active{
+    font-size: 160%;
+/*
+    transition: all 0.5s ease;
+    border: 6px solid #262626;
+*/
+}
+
+.single-box:hover .img-area{ 
+    border: 6px solid #e84393;
+    
+}
+
